@@ -41,7 +41,9 @@
             border-radius:0;
             padding-right:60px;
 
-           
+            &:focus{
+                background: $white;
+            }
 
             &::before{
                 font-family: "Font Awesome 5 Free";
