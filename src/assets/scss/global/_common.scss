@@ -1,0 +1,114 @@
+
+
+
+.breadcrumbs{
+    li{ 
+        &:last-child{
+            font-weight:700;
+
+        }
+        &:not(:last-child)::after{
+        font-family: "Font Awesome 5 Free";
+        font-weight:900;
+        content: "\f078";
+    }
+}
+}
+
+
+.content{
+    font-size:18px;
+
+    h6{
+        color: $blue;
+    }
+
+    .list{
+        line-height:1.7em;
+
+        &.bullet li::marker{
+            font-size:12px;
+        }
+        li::marker{
+            color: $teal;
+        }
+    } 
+    .accordion{
+
+        &-title{
+            border-top: 1px solid $light-gray;
+            line-height:1.5em;
+            border-radius:0;
+            padding-right:60px;
+
+           
+
+            &::before{
+                font-family: "Font Awesome 5 Free";
+                font-weight:900;
+                top:30px;
+            }
+            
+        }
+        &-item.is-active > .accordion-title::before{
+            color: $teal;
+        }
+        &-content{
+            border-top: 1px solid $light-gray;
+            border-bottom: 1px solid $light-gray;
+        }
+        :last-child:not(.is-active) > & {
+            border-bottom: 1px solid $light-gray;
+
+        }
+    
+    }
+    .orbit{
+
+        &-previous, &-next{
+            background-color: $teal;
+            &:hover{
+                background-color: $blue;
+            }
+            
+
+            i{
+                font-size:26px;
+            }
+           
+        }
+        &-previous{
+            border-radius: 0 50px 50px 0;
+            padding: 10px 20px 10px 10px;
+        }
+        &-next{
+            border-radius: 50px 0 0 50px;
+            padding: 10px 10px 10px 20px;
+        }   
+        
+        &-bullets{
+           bottom:60px;
+            
+           button{
+            width:10px;
+            height:10px;
+            background-color: $blue;
+            &:hover{
+                background-color: $teal;
+            }
+
+            &.is-active{
+                background-color: $teal;
+                &:hover{
+                    background-color: $light-teal;
+                }
+            }
+
+           }
+        }
+
+
+    }
+
+}
+

@@ -1,0 +1,64 @@
+// Sidebar styles
+
+.sidebar{
+
+    &__header{
+        background: $blue;
+        padding:10px 13px 9px;
+        
+        &__title{
+            color: $teal;
+            font-size:20px;
+            font-weight:600;
+            padding:0;
+            margin:0;
+        }
+    }
+    &__content{
+        padding:13px;
+
+        nav{
+            padding:0;
+            margin:0;
+            text-decoration: none;
+            > ul{
+                
+               
+
+                > li {
+                    
+                    > a{
+                        border-bottom: 1px solid $medium-gray;
+                        
+                      
+                    }
+                    &:last-of-type > a{
+                        border:none;
+                    }
+                    a{
+                        padding:10px 0;
+                    }
+                    > ul {
+                        list-style-type: none;
+                        margin:0;
+                        > li a{
+                            padding-left:40px;
+
+                            &::before{
+                                font-family: "Font Awesome 5 Free"; 
+                                font-weight:900;
+                                content: "\f054";
+                                color: $teal;
+                                margin-right:10px;
+
+                            }
+                        }
+                    }
+                   
+                } 
+            }
+
+        }
+    }
+
+}
